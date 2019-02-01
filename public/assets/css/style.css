@@ -1,0 +1,124 @@
+body{
+    background-color: white;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    position: relative;
+}
+#photoDiv{
+    position: relative;
+}
+#photoText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: white;
+    text-shadow: 5px 5px red; 
+    opacity: 1.7;
+    text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+#photoTextUnder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: white;
+    text-shadow: 5px 5px red;
+}
+
+#computerPic{
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    opacity: 0.5;
+    color: red;
+}
+
+.navbar{
+    height: 5em;
+    background-color: red;
+    position: relative;
+}
+nav .navbar-brand{
+    color: black;
+    margin: 10px;
+    font-size: 25px;
+
+}
+li .nav-btn{
+    margin: 0 2px;
+    height: 2em;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}
+li .nav-btn a:hover{
+    color: black;
+}
+
+#clear-articles{
+    position: absolute;
+    right: -190%
+}
+
+#articles{
+    height: 100%;
+}
+.parent-article{
+    height: 100%;
+    border: 10px black;
+    background-color: white;
+}
+
+.News-Articles{
+    height: 100%;
+    background-color: white;
+    border: 5px black;
+}
+
+.article-text{
+    color: red;
+    padding: 5px 10px;
+}
+.article-text:hover{
+    color: black;
+}
+
+.btnDiv{
+    position: relative;
+}
+.btn-save, .btn-note{
+    position: absolute;
+    top:25%;
+    left: 25%; 
+}
+ 
