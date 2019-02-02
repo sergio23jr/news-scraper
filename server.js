@@ -25,8 +25,14 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/NewsScraper", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/NewsScraper", { useNewUrlParser: true });
 // mongoose.connect("mongodb://sergio23jr:Home5104@ds029197.mlab.com:29197/news-scraper", { useNewUrlParser: true });
+mongoose.Promise = global.Promise
+
+mongoose.connect(process.env.MONGO_URL || "mongodb://news-scraper:soccer23@ds119755.mlab.com:19755/heroku_wh2j1psc",
+    {
+        useeMongoClient: true
+    });
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
